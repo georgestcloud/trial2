@@ -1,0 +1,90 @@
+
+.navbar {
+    background-color: white;
+    color: white; 
+  }
+
+  .navbar-brand {
+    padding-left: 21px;
+  }
+
+  .navbar-toggler:hover {
+    background-color: gold; 
+  }
+  
+
+  .nav-item {
+    padding: 12px;
+  }
+
+  .nav-link {
+    font-size: small;
+    color: blACK; 
+    font-weight: 500;
+  
+  }
+  .navbar-nav .nav-link {
+    padding: 15px;
+  }
+
+  .nav-link:hover {
+    color: gold; 
+  }
+
+  
+  
+  .carousel-item img {
+    width: auto;
+    height: 300px;
+  }
+
+
+  .carousel-swipe {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: red; 
+    font-size: 35px; 
+    cursor: pointer;
+    z-index: 999;
+    width: 40px; 
+    height: 40px;
+line-height: 40px; }
+
+.carousel-swipe-left {
+    left: 15px; 
+}
+
+.carousel-swipe-right {
+    right: 15px;
+}
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+
+    visibility: visible;
+  }
+
+.carousel-pagination {
+    border-top: 10px white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.carousel-pagination button {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border: none;
+    background-color: black;
+    cursor: pointer;
+}
+
+.carousel-pagination button.active {
+    background-color: gold;
+    border-color: gold;
+}
+
