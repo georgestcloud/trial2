@@ -3,6 +3,7 @@
   .navbar-brand img {
       width: 10px; /* Set width to 200px */
       height: 100px; /* Set height to 100px */
+     padding-left: 7px;
     }
     .navbar-brand {
       padding-left: 7px;
