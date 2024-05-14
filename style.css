@@ -6,6 +6,7 @@ h1 {color: navy;
 padding: 5px;}
 
 .flex-container {
+  padding-top: 30px;
   display: flex;
   flex-direction: row;
   font-size: 30px;
