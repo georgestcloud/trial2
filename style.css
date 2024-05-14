@@ -1,12 +1,11 @@
 
 @media screen and (max-width: 800px) {
   .navbar-brand img {
-      width: 100px; /* Set width to 200px */
-      height: 100px; /* Set height to 100px */
-    
-    }
+      width: 100px; 
+      height: 100px; 
+  }
     .navbar-brand {
-      padding-left: 0px;
+      padding-left: 6px;
     }
 }
 
