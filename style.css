@@ -9,7 +9,7 @@
     }
 }
 
- @media screen and (min-width: 1000px) {
+ @media screen and (min-width: 900px) {
     .carousel-item img {
       width: auto;
       height: 100px; /* Set height to 300px */
