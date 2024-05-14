@@ -9,12 +9,6 @@
     }
 }
 
- @media screen and (min-width: 900px) {
-    .carousel-item img {
-      width: auto;
-      height: 100px; /* Set height to 300px */
-    }
-  }
 
 
 
@@ -55,11 +49,6 @@
   }
 
   
-  
-  .carousel-item img {
-    width: auto;
-    height: 300px;
-  }
 
 
   .carousel-swipe {
