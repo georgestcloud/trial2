@@ -1,7 +1,7 @@
  @media screen and (max-width: 800px) {
         .navbar-brand img {
-            width: 200px; /* Set width to 200px */
-            height: 100px; /* Set height to 100px */
+            width: 150px; /* Set width to 200px */
+            height: 90px; /* Set height to 100px */
         }
     }
 
