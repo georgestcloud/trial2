@@ -20,10 +20,7 @@
 }
 
 
-.navbar {
-    background-color: white;
-    color: white; 
-  }
+
 
   .navbar-brand {
     padding-left: 8px;
@@ -103,4 +100,3 @@ line-height: 40px; }
     background-color: gold;
     border-color: gold;
 }
-
