@@ -5,6 +5,12 @@
 h1 {color: navy;
 padding: 5px;}
 
+.navbar {
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+
 .flex-container {
   padding-top: 30px;
   display: flex;
