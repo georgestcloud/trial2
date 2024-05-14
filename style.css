@@ -1,3 +1,9 @@
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+    .carousel-item img {
+        height: 500px;
+    }
+}
+
 
 @media screen and (max-width: 800px) {
   .navbar-brand img {
