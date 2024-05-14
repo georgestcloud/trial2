@@ -1,9 +1,13 @@
- @media screen and (max-width: 800px) {
-        .navbar-brand img {
-            width: 150px; /* Set width to 200px */
-            height: 90px; /* Set height to 100px */
-        }
+
+@media screen and (max-width: 800px) {
+  .navbar-brand img {
+      width: 200px; /* Set width to 200px */
+      height: 100px; /* Set height to 100px */
     }
+    .navbar-brand {
+      padding-left: 10px;
+    }
+}
 
  @media screen and (min-width: 768px) and (max-width: 1024px) {
         .carousel-item img {
