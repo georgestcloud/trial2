@@ -1,3 +1,20 @@
+ @media screen and (max-width: 800px) {
+        .navbar-brand img {
+            width: 200px; /* Set width to 200px */
+            height: 100px; /* Set height to 100px */
+        }
+    }
+
+ @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .carousel-item img {
+            height: 650px; 
+        }
+    }
+
+
+
+
+
 
 .navbar {
     background-color: white;
@@ -11,12 +28,6 @@
   .navbar-toggler:hover {
     background-color: gold; 
   }
-
- @media screen and (min-width: 768px) and (max-width: 1024px) {
-        .carousel-item img {
-            height: 650px; 
-        }
-    }
 
 
   .nav-item {
