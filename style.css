@@ -9,6 +9,13 @@
     }
 }
 
+ @media screen and (min-width: 1200px) {
+    .carousel-item img {
+      width: auto;
+      height: 300px; /* Set height to 300px */
+    }
+  }
+
 
 
 
