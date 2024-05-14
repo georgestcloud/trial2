@@ -11,7 +11,13 @@
   .navbar-toggler:hover {
     background-color: gold; 
   }
-  
+
+ @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .carousel-item img {
+            height: 650px; 
+        }
+    }
+
 
   .nav-item {
     padding: 12px;
