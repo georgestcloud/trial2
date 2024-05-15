@@ -7,6 +7,13 @@ h1 {color: navy;
 
   font-size: 29px;}
 
+@media (max-width: 800px) {
+  h1 {
+    font-size: 25px; 
+  }
+}
+
+
 .navbar {
   padding-bottom: 2px;
   padding-top: 2px;
