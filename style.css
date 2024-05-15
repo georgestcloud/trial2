@@ -220,6 +220,7 @@ line-height: 40px; }
 
 
 .flex-container {
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -227,6 +228,7 @@ line-height: 40px; }
 
 
 .flex-item {
+  padding: 20px;
   flex: 0 0 33%;
   height: 100px;
   box-sizing: border-box;
