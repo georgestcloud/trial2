@@ -177,12 +177,12 @@ line-height: 40px; }
 
 
 .container-fluid {
-  background-image: url('po.jpg');
   background-size: cover;
   position: relative;
 }
 
 .container-overlay {
+  background-image: url('po.jpg');
   position: absolute;
   top: 0;
   left: 0;
