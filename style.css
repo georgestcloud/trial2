@@ -2,10 +2,11 @@
   box-sizing: border-box;
 }
 
+/* Media query for screens below 800px */
 @media (max-width: 800px) {
-  .your-selector {
-    margin-right: 0 !important; 
-    padding-right: 0 !important; 
+  body {
+    margin-right: 0 !important; /* Remove margin at right */
+    padding-right: 0 !important; /* Remove padding at right */
   }
 }
 
