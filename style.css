@@ -188,10 +188,8 @@ line-height: 40px; }
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('pol.jpg');
   background-size: cover;
-  filter: blur(3px); /* Adjust the blur amount as needed */
-}
+  filter: blur(3px); }
 
 .content {
   position: absolute;
@@ -200,8 +198,7 @@ line-height: 40px; }
   width: 100%;
   height: 100%;
   display: flex;
-  backdrop-filter: blur(1px); /* Adjust the overlay blur amount as needed */
-}
+  backdrop-filter: blur(1px);}
 
 
 
@@ -239,7 +236,7 @@ line-height: 40px; }
 
 
 .custom-container {
-  position: relative; /* Ensure proper positioning of child elements */
+  position: relative; 
   background-image: url('pol.jpg');
   border-top: 35px; 
 }
