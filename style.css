@@ -1,3 +1,8 @@
+@media (max-width: 800px) {
+  body {
+    overflow-x: hidden; 
+  }
+}
 
 
 @media (max-width: 800px) {
