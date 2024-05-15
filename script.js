@@ -46,7 +46,7 @@ function applyStyleForMobileBrowserDesktopMode() {
   if (isMobileBrowserDesktopMode()) {
     var carouselImages = document.querySelectorAll(".carousel-item img");
     carouselImages.forEach(function(image) {
-      image.style.height = "450px";
+      image.style.height = "600px";
     });
   }
 }
