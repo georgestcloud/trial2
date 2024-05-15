@@ -64,7 +64,11 @@ h1 {color: navy;
     }
 }
 
-
+ @media (min-width: 768px) and (max-width: 1024px) {
+  #demo.carousel {
+    height: 450px; /* Fallback or additional styling for mobile browser desktop mode */
+  }
+}
 
 
 
