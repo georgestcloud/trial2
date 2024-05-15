@@ -33,6 +33,13 @@ padding: 5px;}
   flex: 50%;
 }
 
+
+@media (max-width: 799px) {
+    .carousel-item img {
+        height: 250px; /* Adjusted height for screens below 800px */
+    }
+}
+
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {
   .flex-container {
