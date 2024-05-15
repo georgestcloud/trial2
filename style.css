@@ -36,15 +36,6 @@ h1 {color: navy;
 }
 
 
-@media screen and (max-width: 799px) {
-    .image-card {
-        width: 100px; /* Adjusted width for screens below 800px */
-    }
-}
-
-
-
-
 @media (max-width: 799px) {
     .carousel-item img {
         height: 250px; /* Adjusted height for screens below 800px */
@@ -162,14 +153,13 @@ line-height: 40px; }
 
 
 
-.image-card {
-  
-  width: 400px;
-  height: 400px;
- 
-  overflow: hidden;}
+
 
 .image {
+  width: 300px;
+  height: 400px;
+
+  overflow: hidden;
   border-radius: 15px;
   width: 100%;
   height: auto;
