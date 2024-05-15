@@ -2,8 +2,17 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 800px) {
+  .your-selector {
+    margin-right: 0 !important; 
+    padding-right: 0 !important; 
+  }
+}
+
+
+
 .card {
-  border: none; /* Remove border */
+  border: none; 
 }
 
 
