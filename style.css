@@ -40,11 +40,6 @@ padding: 5px;}
   }
 }
 
-@media screen and (max-width: 800px) {
-    .carousel-item img {
-        height: 350px; /* Increase height for mobile browser desktop view */
-    }
-}
 
 @media screen and (max-width: 800px) {
   .navbar-brand img {
@@ -61,7 +56,7 @@ padding: 5px;}
 
 
 .carousel-item img {
-    height: 300px;
+    height: 350px;
 }
 
 
