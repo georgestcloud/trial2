@@ -39,7 +39,7 @@ h1 {color: navy;
 
 @media (max-width: 799px) {
     .carousel-item img {
-        height: 250px; /* Adjusted height for screens below 800px */
+        height: 350px; /* Adjusted height for screens below 800px */
     }
 }
 
@@ -64,16 +64,11 @@ h1 {color: navy;
     }
 }
 
- @media (min-width: 768px) and (max-width: 1024px) {
-  #demo.carousel {
-    height: 450px; /* Fallback or additional styling for mobile browser desktop mode */
-  }
-}
 
 
 
 .carousel-item img {
-    height: 300px;
+    height: 320px;
 }
 
 
