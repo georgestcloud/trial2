@@ -169,6 +169,45 @@
 
 
 
+<div class="flex-container" data-aos="fade-up" data-aos-duration="3000" style="border-top: 36px;">
+
+  <div class="flex-item-left">
+    <div class="card" style="width:300px; border-radius: 20px;">
+      <img class="card-img-top" src="pp.jpg" alt="Card image" style="width:100%; border-radius: 10px;">
+      <div class="card-body">
+        <h4 class="card-title">John Doe</h4>
+        <p class="card-text">Some placeholder</p>
+        <a href="#" class="btn btn-primary">See Profile</a>
+      </div>
+    </div>
+    <br>
+
+    </div>
+    
+    
+    <div class="flex-item-right">
+  
+
+  </div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -181,16 +220,18 @@
     var paginationButtons = document.querySelectorAll('.carousel-pagination button');
 
     carousel.addEventListener('slide.bs.carousel', function (event) {
-        // Remove 'active' class from all pagination buttons
+
+      
         paginationButtons.forEach(function (button) {
             button.classList.remove('active');
         });
 
-        // Add 'active' class to the pagination button corresponding to the next slide
+       
         paginationButtons[event.to].classList.add('active');
     });
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
 
 <script>
   AOS.init();
