@@ -60,25 +60,3 @@ window.onresize = applyStyleForMobileBrowserDesktopMode;
 
 
 
-// Function to check if the device is in mobile browser desktop mode
-function isMobileBrowserDesktopMode() {
-  return window.innerWidth >= 700 && window.innerWidth <= 1024;
-}
-
-// Function to toggle collapsible navbar visibility based on screen size
-function toggleNavbarVisibility() {
-  var navbarToggler = document.getElementById("navbar-toggler");
-  var collapsibleNavbar = document.getElementById("collapsibleNavbar");
-
-  if (isMobileBrowserDesktopMode()) {
-    navbarToggler.style.display = "block"; // Show navbar toggler
-    collapsibleNavbar.classList.add("show"); // Show collapsible navbar
-  } else {
-    navbarToggler.style.display = "none"; // Hide navbar toggler
-    collapsibleNavbar.classList.remove("show"); // Hide collapsible navbar
-  }
-}
-
-// Toggle navbar visibility when the page loads and on window resize
-window.onload = toggleNavbarVisibility;
-window.onresize = toggleNavbarVisibility;
