@@ -44,10 +44,12 @@ function isMobileBrowserDesktopMode() {
 // Apply the style if in mobile browser desktop mode
 function applyStyleForMobileBrowserDesktopMode() {
   if (isMobileBrowserDesktopMode()) {
+    var carouselContainer = document.getElementById("demo"); // Assuming "demo" is the ID of the carousel container
     var carouselImages = document.querySelectorAll(".carousel-item img");
     carouselImages.forEach(function(image) {
-      image.style.height = "800px";
+      image.style.height = "800px"; // Adjust height as needed
     });
+    carouselContainer.style.height = "auto"; // Reset height to auto to accommodate the increased image height
   }
 }
 
