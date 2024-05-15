@@ -24,6 +24,7 @@ h1 {color: navy;
 .flex-item-left {
   background-color: white;
   padding-left: 40px;
+  padding-right: 20px;
   flex: 50%;
 }
 
