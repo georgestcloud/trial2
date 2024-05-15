@@ -3,8 +3,9 @@
 }
 
 h1 {color: navy;
-padding-left: 50px;
-font-size: 29px;}
+  padding-bottom: 35px;
+
+  font-size: 29px;}
 
 .navbar {
   padding-bottom: 2px;
@@ -22,7 +23,7 @@ font-size: 29px;}
 
 .flex-item-left {
   background-color: white;
-  padding: 10px;
+  padding-left: 40px;
   flex: 50%;
 }
 
@@ -153,15 +154,11 @@ line-height: 40px; }
 
 
 .image-card {
-  justify-content: center;
-
+  
   width: 400px;
   height: 400px;
  
-  overflow: hidden;
- padding-left: 50px;
- padding-top: 30px;
-}
+  overflow: hidden;}
 
 .image {
   border-radius: 15px;
