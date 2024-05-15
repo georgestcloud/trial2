@@ -3,7 +3,8 @@
 }
 
 h1 {color: navy;
-padding: 5px;}
+padding-left: 50px;
+font-size: 29px;}
 
 .navbar {
   padding-bottom: 2px;
@@ -16,7 +17,7 @@ padding: 5px;}
   display: flex;
   flex-direction: row;
   font-size: 30px;
-  text-align: center;
+
 }
 
 .flex-item-left {
@@ -146,4 +147,24 @@ line-height: 40px; }
 .carousel-pagination button.active {
     background-color: gold;
     border-color: gold;
+}
+
+
+
+
+.image-card {
+  justify-content: center;
+
+  width: 400px;
+  height: 400px;
+ 
+  overflow: hidden;
+ padding-left: 50px;
+ padding-top: 30px;
+}
+
+.image {
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
 }
