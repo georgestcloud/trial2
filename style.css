@@ -36,6 +36,15 @@ h1 {color: navy;
 }
 
 
+@media screen and (max-width: 799px) {
+    .image-card {
+        width: 250px; /* Adjusted width for screens below 800px */
+    }
+}
+
+
+
+
 @media (max-width: 799px) {
     .carousel-item img {
         height: 250px; /* Adjusted height for screens below 800px */
