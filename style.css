@@ -32,11 +32,7 @@ padding: 5px;}
 
   flex: 50%;
 }
-@media (max-width: 800px) { 
-  .carousel-item img {
-        height: 350px; /* Increase height for mobile browser desktop view */
-    }
-}
+
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {
   .flex-container {
@@ -46,7 +42,7 @@ padding: 5px;}
 
 @media screen and (max-width: 800px) {
     .carousel-item img {
-        height: 500px; /* Increase height for mobile browser desktop view */
+        height: 350px; /* Increase height for mobile browser desktop view */
     }
 }
 
