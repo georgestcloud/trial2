@@ -1,11 +1,14 @@
-* {
-  box-sizing: border-box;
+
+
+@media (max-width: 800px) {
+  .card-img-top {
+    width: 170px !important; /* Adjusted width for screens below 800px */
+  }
 }
 
-/* Media query for screens below 800px */
+
 @media (max-width: 800px) {
-  /* Remove margin and padding at right */
-  /* body {
+  body {
     margin-right: 0 !important;
     padding-right: 0 !important;
   } */
