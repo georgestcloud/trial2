@@ -38,7 +38,7 @@ h1 {color: navy;
 
 @media screen and (max-width: 799px) {
     .image-card {
-        width: 250px; /* Adjusted width for screens below 800px */
+        width: 100px; /* Adjusted width for screens below 800px */
     }
 }
 
