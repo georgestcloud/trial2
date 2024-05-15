@@ -36,20 +36,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Check if the device is in mobile browser desktop mode
+// Function to check if the device is in mobile browser desktop mode
 function isMobileBrowserDesktopMode() {
-  return window.innerWidth >= 768 && window.innerWidth <= 1024;
+  return window.innerWidth >= 700 && window.innerWidth <= 1024;
 }
 
 // Apply the style if in mobile browser desktop mode
 function applyStyleForMobileBrowserDesktopMode() {
   if (isMobileBrowserDesktopMode()) {
-    var carousel = document.getElementById("demo");
-    carousel.style.height = "450px";
+    var carouselImages = document.querySelectorAll(".carousel-item img");
+    carouselImages.forEach(function(image) {
+      image.style.height = "450px";
+    });
   }
 }
 
 // Apply the style when the page loads and on window resize
 window.onload = applyStyleForMobileBrowserDesktopMode;
 window.onresize = applyStyleForMobileBrowserDesktopMode;
-
