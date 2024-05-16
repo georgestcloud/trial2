@@ -11,13 +11,6 @@ body {
 }
 
 
-@media (max-width: 800px) {
-  .flex-item-left {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 
 @media (max-width: 800px) {
   body {
@@ -76,7 +69,13 @@ h1 {
     flex-direction: column;
   }
   .flex-item-left {
-    margin-bottom: 20px; /* Adjust the margin as needed */
+    margin-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .flex-item-right {
+      padding-left: 0;
+    padding-right: 0;
   }
 }
 
