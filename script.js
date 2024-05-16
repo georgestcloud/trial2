@@ -108,3 +108,35 @@ window.onresize = function() {
   applyStyleForMobileBrowserDesktopMode();
   adjustCarouselCaptionStyle();
 };
+
+
+
+
+
+
+
+
+
+
+
+// Function to check if the device is in mobile browser desktop mode
+function isMobileBrowserDesktopMode() {
+  return window.innerWidth >= 700 && window.innerWidth <= 1024;
+}
+
+// Apply the style if in mobile browser desktop mode
+function applyStyleForMobileBrowserDesktopMode() {
+  if (isMobileBrowserDesktopMode()) {
+    // Show the toggler icon and hide the navbar items
+    var toggler = document.getElementById("navbar-toggler");
+    var navbarCollapse = document.getElementById("collapsibleNavbar");
+    if (toggler && navbarCollapse) {
+      toggler.style.display = "block"; // Show the toggler icon
+      navbarCollapse.classList.remove("show"); // Hide the navbar items
+    }
+  }
+}
+
+// Apply the style when the page loads and on window resize
+window.onload = applyStyleForMobileBrowserDesktopMode;
+window.onresize = applyStyleForMobileBrowserDesktopMode;
