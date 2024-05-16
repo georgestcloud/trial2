@@ -170,18 +170,18 @@ font-weight: bold;
 }
 
 .image {
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   overflow: hidden;
   border-radius: 15px;
   width: 100%;
   height: auto;
 }
 
-  @media (min-width: 1600px) {
+  @media (min-width: 1400px) {
             .image {
-                width: 200px; /* Set width to 50px */
-                height: 200px; /* Set height to 50px */
+                width: 150px;
+                height: 150px; 
             }
         }
 
