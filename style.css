@@ -170,13 +170,24 @@ font-weight: bold;
 }
 
 .image {
-  width: 270px;
-  height: 270px;
+  width: 250px;
+  height: 250px;
   overflow: hidden;
   border-radius: 15px;
   width: 100%;
   height: auto;
 }
+
+  @media (min-width: 1600px) {
+            .image {
+                width: 200px; /* Set width to 50px */
+                height: 200px; /* Set height to 50px */
+            }
+        }
+
+
+
+
 
 .container {
   position: relative;
