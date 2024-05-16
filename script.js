@@ -102,3 +102,23 @@ window.onresize = function() {
 
 
 
+
+
+  // JavaScript code to add zoom effect on image hover
+    document.addEventListener('DOMContentLoaded', function() {
+        const image = document.querySelector('.custom-container');
+
+        // Add event listeners for mouse enter and leave
+        image.addEventListener('mouseenter', function() {
+            // Scale up the image slightly on hover
+            this.style.transform = 'scale(1.1)';
+            this.style.transition = 'transform 0.3s ease';
+        });
+
+        image.addEventListener('mouseleave', function() {
+            // Reset the image scale on mouse leave
+            this.style.transform = 'scale(1)';
+            this.style.transition = 'transform 0.3s ease';
+        });
+    });
+
