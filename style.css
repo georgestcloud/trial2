@@ -346,7 +346,20 @@ font-weight: bold;
 
 
 
+        .custom-list {
+            color: #Ab5943; 
+            list-style-type: none; 
+            padding: 0; 
+        }
 
+        .custom-list li {
+            padding-top: 25px;
+        }
+
+        .custom-list li a {
+            text-decoration: none; 
+            color: #Ab5943;
+        }
 
 
 
