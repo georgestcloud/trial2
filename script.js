@@ -54,17 +54,6 @@ function applyStyleForMobileBrowserDesktopMode() {
 }
 
 
-// Function to apply styles for mobile browser desktop mode
-function applyStyleForMobileBrowserDesktopMode() {
-  if (isMobileBrowserDesktopMode()) {
-    var carouselCaptions = document.querySelectorAll(".carousel-caption");
-    carouselCaptions.forEach(function(caption) {
-      caption.style.fontWeight = "bold";
-      caption.style.fontSize = "35px";
-    });
-  }
-}
-
 
 // Apply the style when the page loads and on window resize
 window.onload = applyStyleForMobileBrowserDesktopMode;
