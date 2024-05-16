@@ -102,11 +102,12 @@ h1 {
 }
 
 .nav-item {
-  padding: 16px;
+  padding: 10px;
 }
 
 .nav-link {
-  font-size: 10px;
+font-weight: bold;
+  font-size: 22px;
   color:  #Ab5943; 
   font-weight: 500;
 }
