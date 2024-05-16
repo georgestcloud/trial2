@@ -279,22 +279,6 @@ font-weight: bold;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .carousel-inner {
   position: relative;
   z-index: 1; /* Set z-index of carousel images and container to 1 */
@@ -317,33 +301,6 @@ font-weight: bold;
     font-size: 20px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         .custom-list {
@@ -369,3 +326,36 @@ font-weight: bold;
 
 
 
+
+
+
+
+
+
+
+
+
+
+.asake {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left-panel, .right-panel {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Media query for screens below 800px */
+@media (max-width: 800px) {
+    .asake {
+        flex-direction: column; /* Stack items vertically */
+    }
+    .left-panel, .right-panel {
+        width: 100%; /* Each panel takes full width */
+    }
+}
