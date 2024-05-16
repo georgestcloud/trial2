@@ -63,3 +63,48 @@ window.onresize = applyStyleForMobileBrowserDesktopMode;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Function to increase font size and weight for carousel captions in mobile browser desktop mode
+function adjustCarouselCaptionStyle() {
+  if (isMobileBrowserDesktopMode()) {
+    var carouselCaptions = document.querySelectorAll(".carousel-caption");
+    carouselCaptions.forEach(function(caption) {
+      caption.style.fontWeight = "bold";
+      caption.style.fontSize = "55px";
+    });
+  }
+}
+
+// Apply the style for carousel captions when the page loads and on window resize
+window.onload = function() {
+  applyStyleForMobileBrowserDesktopMode();
+  adjustCarouselCaptionStyle();
+};
+window.onresize = function() {
+  applyStyleForMobileBrowserDesktopMode();
+  adjustCarouselCaptionStyle();
+};
