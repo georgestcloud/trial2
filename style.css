@@ -234,9 +234,11 @@ font-weight: bold;
 }
 
 .custom-container {
-  position: relative; /* Ensure proper positioning of child elements */
-  background-image: url('pol.jpg');
-  border-top: 35px; 
+    position: relative;
+    overflow: hidden; 
+    background-image: url('pol.jpg'); 
+    background-size: cover; 
+    border-top: 35px; 
 }
 
 .container-overlay {
@@ -255,12 +257,7 @@ font-weight: bold;
   }
 }
 
-.flex-container {
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+
 
 .flex-item {
   flex-basis: calc(33.33% - 10px);
