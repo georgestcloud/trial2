@@ -325,23 +325,81 @@ font-weight: bold;
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
+    flex-direction: row;
 }
 
-.left-panel, .right-panel {
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.left-panel {
+  flex: 0 0 33%; /* Take 33% of the screen */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.right-panel {
+  flex: 1; /* Take the remaining space */
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 /* Media query for screens below 800px */
 @media (max-width: 800px) {
-    .asake {
-        flex-direction: column; /* Stack items vertically */
-    }
-    .left-panel, .right-panel {
-        width: 100%; /* Each panel takes full width */
-    }
+  .asake {
+      flex-direction: column; /* Stack items vertically */
+  }
+  .left-panel, .right-panel {
+      width: 100%; /* Each panel takes full width */
+  }
 }
+
+/* Card styling */
+.card {
+  width: 100px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
