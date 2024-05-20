@@ -114,3 +114,24 @@ document.querySelectorAll('.btn.btn-danger').forEach(button => {
     modalInstance.hide();
   });
 });
+
+
+// Close modal when the close button with class "btn-close" is clicked
+document.querySelectorAll('.btn-close').forEach(button => {
+  button.addEventListener('click', function() {
+    const modal = document.querySelector('.modal');
+    const modalBackdrop = document.querySelector('.modal-backdrop');
+    modal.style.display = 'none';
+    modalBackdrop.style.display = 'none';
+  });
+});
+
+// Close modal when the close button with class "btn btn-danger" is clicked
+document.querySelectorAll('.btn.btn-danger').forEach(button => {
+  button.addEventListener('click', function() {
+    const modal = document.querySelector('.modal');
+    const modalBackdrop = document.querySelector('.modal-backdrop');
+    modal.style.display = 'none';
+    modalBackdrop.style.display = 'none';
+  });
+});
