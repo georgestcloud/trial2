@@ -94,15 +94,61 @@ window.onresize = function() {
 
 
 
-// Get all close buttons
-const closeButtons = document.querySelectorAll('.closeModalBtn');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Get all close buttons with class closeModalBtn2
+const closeButtons2 = document.querySelectorAll('.closeModalBtn2');
 
 // Add event listeners to each close button
-closeButtons.forEach(button => {
+closeButtons2.forEach(button => {
   button.addEventListener('click', function() {
-    const modal = document.querySelector('.modal');
+    const modal = document.querySelector('#myModal2');
     const modalInstance = new bootstrap.Modal(modal);
     modalInstance.hide();
   });
 });
+
+
+
+
+
+
 
