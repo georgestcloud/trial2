@@ -89,33 +89,3 @@ window.onresize = function() {
 
 
 
-
-
-
-
-
-
-
-
-function openCustomModal() {
-    document.getElementById('customModal').style.display = 'block';
-  }
-
-  function closeCustomModal() {
-    document.getElementById('customModal').style.display = 'none';
-  }
-
-  // Ensure modal opens within visible area of the screen
-  window.addEventListener("resize", function() {
-    const modal = document.getElementById('customModal');
-    const modalContent = modal.querySelector('.custom-modal-content');
-    const modalHeight = modalContent.clientHeight;
-    const windowHeight = window.innerHeight;
-    if (modalHeight > windowHeight) {
-      modalContent.style.maxHeight = `${windowHeight - 20}px`;
-      modalContent.style.overflowY = "auto";
-    } else {
-      modalContent.style.maxHeight = "initial";
-      modalContent.style.overflowY = "initial";
-    }
-  });
