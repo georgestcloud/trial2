@@ -61,18 +61,6 @@ window.onresize = applyStyleForMobileBrowserDesktopMode;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // Function to increase font size and weight for carousel captions in mobile browser desktop mode
 function adjustCarouselCaptionStyle() {
   if (isMobileBrowserDesktopMode()) {
@@ -101,30 +89,36 @@ window.onresize = function() {
 
 
 
+
+
+
+
+
+
+
+
 // Get modal element
 var modal = document.getElementById("myModal");
 
 // Get button that opens the modal
 var openModalBtn = document.getElementById("openModalBtn");
 
-// Get close button element
-var closeBtn = document.getElementById("closeBtn");
-
-// Get danger button element
-var dangerBtn = document.getElementById("dangerBtn");
+// Get close buttons
+var closeFooterBtn = document.getElementById("closeFooterBtn");
+var closeHeaderBtn = document.getElementById("closeHeaderBtn");
 
 // Open modal when the open button is clicked
 openModalBtn.onclick = function() {
     modal.style.display = "block";
 }
 
-// Close modal when the close button is clicked
-closeBtn.onclick = function() {
+// Close modal when the close button in the footer is clicked
+closeFooterBtn.onclick = function() {
     modal.style.display = "none";
 }
 
-// Close modal when the danger button is clicked
-dangerBtn.onclick = function() {
+// Close modal when the close button in the header is clicked
+closeHeaderBtn.onclick = function() {
     modal.style.display = "none";
 }
 
@@ -134,7 +128,3 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-
-
-
-
