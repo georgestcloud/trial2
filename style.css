@@ -437,6 +437,8 @@ font-weight: bold;
 
 
 
+
+
 #openModalBtn {
     padding: 10px 20px;
     font-size: 16px;
@@ -459,8 +461,8 @@ font-weight: bold;
     margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 60%;
-    max-width: 600px; 
+    width: 50%; /* Medium size */
+    max-width: 500px; 
     color: black;
 }
 
@@ -474,20 +476,17 @@ font-weight: bold;
     margin: 0;
 }
 
-.danger-button, .close-button {
+.close-button {
     padding: 10px 20px;
     font-size: 14px;
     cursor: pointer;
-}
-
-.danger-button {
-    background-color: red;
-    color: white;
-    border: none;
-}
-
-.close-button {
     background-color: #ccc;
     color: black;
     border: none;
+}
+
+.close-button#closeHeaderBtn {
+    background-color: red;
+    color: white;
+    font-size: 20px;
 }
