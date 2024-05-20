@@ -143,7 +143,6 @@ adjustCarouselCaptionStyle();
 
 
 
-
 // JavaScript to create and display the modal
 document.addEventListener('DOMContentLoaded', (event) => {
   const openModalBtn = document.getElementById("openModal");
@@ -208,6 +207,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
               modal.style.display = "none";
           }
       });
+
+      // Dynamically adjust modal height and width based on screen size
+      function adjustModalStyle() {
+          if (window.innerWidth >= 1100) {
+              modal.style.height = "100%";
+              modal.style.overflowY = "scroll";
+          } else if (window.innerWidth < 800) {
+              modal.style.width = "100%";
+          }
+      }
+
+      // Apply the style for modal when the page loads and on window resize
+      window.onload = adjustModalStyle;
+      window.onresize = adjustModalStyle;
       
       // Display the modal
       modal.style.display = "block";
