@@ -371,7 +371,7 @@ font-weight: bold;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(173, 248, 2, 0.5); /* Adjust opacity as needed */
+  background-color: rgba(214, 162, 149, 0.5); /* Adjust opacity as needed */
   z-index: 2;
 }
 
@@ -397,23 +397,7 @@ font-weight: bold;
 }
 
 
-.new-custom-container {
-  position: relative;
-  overflow: hidden;
-  background-image: url('pol.jpg');
-  background-size: cover;
-  height: 100%px; /* Adjust height as needed */
-}
 
-.new-container-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(173, 248, 2, 0.5); /* Adjust opacity as needed */
-  z-index: 2;
-}
 
 
   
