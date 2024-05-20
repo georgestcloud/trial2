@@ -97,86 +97,25 @@ window.onresize = function() {
 
 
 
-// Get modal element
-var modal = document.getElementById("myModal");
+function openCustomModal() {
+    document.getElementById('customModal').style.display = 'block';
+  }
 
-// Get button that opens the modal
-var openModalBtn = document.getElementById("openModalBtn");
+  function closeCustomModal() {
+    document.getElementById('customModal').style.display = 'none';
+  }
 
-// Get close buttons
-var closeFooterBtn = document.getElementById("closeFooterBtn");
-var closeHeaderBtn = document.getElementById("closeHeaderBtn");
-
-// Open modal when the open button is clicked
-openModalBtn.onclick = function() {
-    modal.style.display = "block";
-}
-
-// Close modal when the close button in the footer is clicked
-closeFooterBtn.onclick = function() {
-    modal.style.display = "none";
-}
-
-// Close modal when the close button in the header is clicked
-closeHeaderBtn.onclick = function() {
-    modal.style.display = "none";
-}
-
-// Close modal when clicking outside the modal content
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+  // Ensure modal opens within visible area of the screen
+  window.addEventListener("resize", function() {
+    const modal = document.getElementById('customModal');
+    const modalContent = modal.querySelector('.custom-modal-content');
+    const modalHeight = modalContent.clientHeight;
+    const windowHeight = window.innerHeight;
+    if (modalHeight > windowHeight) {
+      modalContent.style.maxHeight = `${windowHeight - 20}px`;
+      modalContent.style.overflowY = "auto";
+    } else {
+      modalContent.style.maxHeight = "initial";
+      modalContent.style.overflowY = "initial";
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- document.addEventListener("DOMContentLoaded", function() {
-    // Close modal when close button is clicked
-    const closeBtns = document.querySelectorAll(".close-btn");
-    closeBtns.forEach(btn => {
-      btn.addEventListener("click", function() {
-        const modal = document.querySelector(this.getAttribute("data-bs-target"));
-        const modalInstance = bootstrap.Modal.getInstance(modal);
-        modalInstance.hide();
-      });
-    });
-
-    // Ensure modal opens within visible area of the screen
-    const modals = document.querySelectorAll(".modal");
-    modals.forEach(modal => {
-      modal.addEventListener("show.bs.modal", function() {
-        const modalDialog = this.querySelector(".modal-dialog");
-        const modalHeight = modalDialog.clientHeight;
-        const windowHeight = window.innerHeight;
-        if (modalHeight > windowHeight) {
-          modalDialog.style.maxHeight = `${windowHeight - 20}px`;
-          modalDialog.style.overflowY = "auto";
-        }
-      });
-    });
   });
