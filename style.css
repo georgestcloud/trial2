@@ -669,6 +669,7 @@ font-weight: bold;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  border-radius: 50px;
 }
 
 .dropdown-toggle:hover {
