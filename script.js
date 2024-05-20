@@ -226,3 +226,36 @@ document.addEventListener('DOMContentLoaded', (event) => {
       modal.style.display = "block";
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdownBtn = document.getElementById("dropdownBtn");
+  const dropdownMenu = document.getElementById("dropdownMenu");
+
+  dropdownBtn.addEventListener('click', function() {
+    dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+  });
+
+  window.addEventListener('click', function(event) {
+    if (!event.target.matches('.dropdown-toggle')) {
+      if (dropdownMenu.style.display === 'block') {
+        dropdownMenu.style.display = 'none';
+      }
+    }
+  });
+});
+
