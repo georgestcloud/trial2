@@ -410,8 +410,29 @@ font-weight: bold;
 
 
 
-  
-  #continueBtn {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#continueBtn {
   background-color: #Ab5943;
   color: white;
   border: none;
@@ -422,13 +443,13 @@ font-weight: bold;
 }
 
 #continueBtn:hover {
-  background-color: darkblue;
+  background-color: gold;
 }
 
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 1000; /* Ensure it is on top of other content */
   left: 0;
   top: 0;
   width: 100%;
@@ -439,11 +460,12 @@ font-weight: bold;
 
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto;
+  margin: 15% auto; /* Center the modal vertically and horizontally */
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
   max-width: 600px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Add a shadow for better visibility */
 }
 
 .modal-header, .modal-footer {
@@ -453,7 +475,6 @@ font-weight: bold;
 
 .close {
   color: #aaa;
-  float: right;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
@@ -465,8 +486,3 @@ font-weight: bold;
   text-decoration: none;
   cursor: pointer;
 }
-
-#continueBtn:hover {
-  background-color: gold;
-}
-
