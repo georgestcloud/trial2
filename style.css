@@ -68,6 +68,7 @@ h1 {
   .flex-item-right {
       padding-left: 0;
     padding-right: 0;
+    font-size: 17px;
   }
 }
 
@@ -118,7 +119,7 @@ font-weight: bold;
   transform: translateY(-50%);
   background: none;
   border: none;
-  color: red; 
+  color: #Ab5943; 
   font-size: 35px; 
   cursor: pointer;
   z-index: 999;
@@ -286,11 +287,6 @@ font-weight: bold;
   z-index: 2;
 }
 
-@media (max-width: 800px) {
-  .carousel-caption {
-    font-size: 20px;
-  }
-}
 
 
         .custom-list {
