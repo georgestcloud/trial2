@@ -2,11 +2,16 @@ body {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   color: black;
 }
+@media (max-width: 800px) {
+  .eze {
+    padding: 12px;
+  }
+}
 
 
 @media (max-width: 800px) {
   body {
-    padding: 10px;
+    font-size: 15px;
     overflow-x: hidden; 
   }
 }
