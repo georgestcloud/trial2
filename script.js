@@ -89,3 +89,28 @@ window.onresize = function() {
 
 
 
+
+
+
+
+
+
+
+
+// Close modal when the close button with class "btn-close" is clicked
+document.querySelectorAll('.btn-close').forEach(button => {
+  button.addEventListener('click', function() {
+    const modal = document.querySelector('.modal');
+    const modalInstance = bootstrap.Modal.getInstance(modal);
+    modalInstance.hide();
+  });
+});
+
+// Close modal when the close button with class "btn btn-danger" is clicked
+document.querySelectorAll('.btn.btn-danger').forEach(button => {
+  button.addEventListener('click', function() {
+    const modal = document.querySelector('.modal');
+    const modalInstance = bootstrap.Modal.getInstance(modal);
+    modalInstance.hide();
+  });
+});
