@@ -6,18 +6,11 @@ body {
 
 @media (max-width: 800px) {
   body {
+    padding: 10px;
     overflow-x: hidden; 
   }
 }
 
-
-
-@media (max-width: 800px) {
-  body {
-    margin-right: 0 !important;
-    padding-right: 0 !important;
-  } 
-}
 
 .card {
   border: none; 
