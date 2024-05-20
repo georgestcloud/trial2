@@ -97,41 +97,23 @@ window.onresize = function() {
 
 
 
-// Close modal when the close button with class "btn-close" is clicked
-document.querySelectorAll('.btn-close').forEach(button => {
-  button.addEventListener('click', function() {
-    const modal = document.querySelector('.modal');
-    const modalInstance = bootstrap.Modal.getInstance(modal);
-    modalInstance.hide();
-  });
-});
-
-// Close modal when the close button with class "btn btn-danger" is clicked
-document.querySelectorAll('.btn.btn-danger').forEach(button => {
-  button.addEventListener('click', function() {
-    const modal = document.querySelector('.modal');
-    const modalInstance = bootstrap.Modal.getInstance(modal);
-    modalInstance.hide();
-  });
-});
 
 
-// Close modal when the close button with class "btn-close" is clicked
-document.querySelectorAll('.btn-close').forEach(button => {
-  button.addEventListener('click', function() {
-    const modal = document.querySelector('.modal');
-    const modalBackdrop = document.querySelector('.modal-backdrop');
-    modal.style.display = 'none';
-    modalBackdrop.style.display = 'none';
-  });
+
+
+// Function to close the modal
+function closeModal() {
+  const modal = document.getElementById('myModal');
+  modal.style.display = 'none';
+}
+
+// Event listener for the close button in the header
+document.getElementById('closeModalBtn').addEventListener('click', function() {
+  closeModal();
 });
 
-// Close modal when the close button with class "btn btn-danger" is clicked
-document.querySelectorAll('.btn.btn-danger').forEach(button => {
-  button.addEventListener('click', function() {
-    const modal = document.querySelector('.modal');
-    const modalBackdrop = document.querySelector('.modal-backdrop');
-    modal.style.display = 'none';
-    modalBackdrop.style.display = 'none';
-  });
+// Event listener for the close button in the footer
+document.getElementById('closeModalFooterBtn').addEventListener('click', function() {
+  closeModal();
 });
+
