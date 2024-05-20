@@ -100,3 +100,41 @@ window.onresize = function() {
 
 
 
+
+// Get modal element
+var modal = document.getElementById("myModal");
+
+// Get button that opens the modal
+var openModalBtn = document.getElementById("openModalBtn");
+
+// Get close button element
+var closeBtn = document.getElementById("closeBtn");
+
+// Get danger button element
+var dangerBtn = document.getElementById("dangerBtn");
+
+// Open modal when the open button is clicked
+openModalBtn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// Close modal when the close button is clicked
+closeBtn.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Close modal when the danger button is clicked
+dangerBtn.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Close modal when clicking outside the modal content
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
+
