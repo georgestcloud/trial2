@@ -128,3 +128,55 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ document.addEventListener("DOMContentLoaded", function() {
+    // Close modal when close button is clicked
+    const closeBtns = document.querySelectorAll(".close-btn");
+    closeBtns.forEach(btn => {
+      btn.addEventListener("click", function() {
+        const modal = document.querySelector(this.getAttribute("data-bs-target"));
+        const modalInstance = bootstrap.Modal.getInstance(modal);
+        modalInstance.hide();
+      });
+    });
+
+    // Ensure modal opens within visible area of the screen
+    const modals = document.querySelectorAll(".modal");
+    modals.forEach(modal => {
+      modal.addEventListener("show.bs.modal", function() {
+        const modalDialog = this.querySelector(".modal-dialog");
+        const modalHeight = modalDialog.clientHeight;
+        const windowHeight = window.innerHeight;
+        if (modalHeight > windowHeight) {
+          modalDialog.style.maxHeight = `${windowHeight - 20}px`;
+          modalDialog.style.overflowY = "auto";
+        }
+      });
+    });
+  });
