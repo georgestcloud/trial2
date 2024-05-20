@@ -137,34 +137,37 @@ will design, build, finance, construct, commission and operate, and  maintain a 
  
 </ul>
 
-
-
-    <!-- Button to open the modal -->
-<button type="button" class="btn btn-primary" id="openModalBtn">Open modal</button>
+<!-- Button to open the modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    CONTINUE READING
+</button>
 
 <!-- The Modal -->
 <div class="modal" id="myModal">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
+
       <!-- Modal Header -->
       <div class="modal-header">
         <h4 class="modal-title">Modal Heading</h4>
-        <!-- Close button in the header -->
-        <button type="button" class="btn-close" id="closeModalBtn"></button>
+        <!-- Different close button in the header -->
+        <button type="button" class="btn btn-secondary closeModalBtn" data-bs-dismiss="modal">Close</button>
       </div>
+
       <!-- Modal body -->
       <div class="modal-body">
         Modal body..
       </div>
+
       <!-- Modal footer -->
       <div class="modal-footer">
-        <!-- Close button in the footer -->
-        <button type="button" class="btn btn-danger" id="closeModalFooterBtn">Close</button>
+        <!-- Different close button in the footer -->
+        <button type="button" class="btn btn-secondary closeModalBtn" data-bs-dismiss="modal">Close</button>
       </div>
+
     </div>
   </div>
 </div>
-
 
     
 
