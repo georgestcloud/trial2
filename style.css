@@ -23,9 +23,17 @@ body {
 
 h1 {
   color: #Ab5943;
-
   font-size: 27px;
 }
+
+@media (min-width: 200px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+
+
+
 
 .navbar {
   padding-bottom: 2px;
