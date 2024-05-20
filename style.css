@@ -412,7 +412,7 @@ font-weight: bold;
 
   
   #continueBtn {
-  background-color: blue;
+  background-color: #Ab5943;
   color: white;
   border: none;
   border-radius: 50px;
@@ -465,3 +465,8 @@ font-weight: bold;
   text-decoration: none;
   cursor: pointer;
 }
+
+#continueBtn:hover {
+  background-color: gold;
+}
+
